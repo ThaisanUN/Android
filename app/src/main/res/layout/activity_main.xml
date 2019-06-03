@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:srcCompat="@mipmap/cropped_banner"  />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_below="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="CAMBODIA"
+            android:textColor="#000B24"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_below="@id/textView2"
+            tools:text="Department of Computer Science" />
+            <EditText
+                android:id="@+id/editName"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView3"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:hint="Input Your Name"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="#090404"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/editDT"
+                android:layout_below="@id/editName"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:ems="10"
+                android:inputType="text"
+                android:gravity="center"
+                android:hint="Member of academic examiners board"
+                android:textColor="#090404"
+                android:textSize="20sp" />
+        <EditText
+            android:id="@+id/editSJ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/editDT"
+            android:gravity="center"
+            android:hint="Evaluation of oral presentation"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="#090404"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/VForm"
+            android:layout_below="@+id/editSJ"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Form,Communication faculty"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/V1if"
+            android:layout_below="@id/VForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="1 . Clarity of presentation outline" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/GroupF1"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/V1if"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/RadioA1if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="A" />
+
+                <RadioButton
+                    android:id="@+id/RadioB1if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="B" />
+
+                <RadioButton
+                    android:id="@+id/RadioC1if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="C" />
+
+                <RadioButton
+                    android:id="@+id/RadioD1if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="D" />
+
+                <RadioButton
+                    android:id="@+id/RadioE1if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="E" />
+            </RadioGroup>
+
+        <TextView
+            android:id="@+id/V2if"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/GroupF1"
+            android:layout_marginTop="10dp"
+            android:text="2 . Respect of give time - Time management,rhythm of presentation"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/V2if"
+                android:id="@+id/GroupF2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/RadioA2if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="A" />
+
+                <RadioButton
+                    android:id="@+id/RadioB2if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="B" />
+
+                <RadioButton
+                    android:id="@+id/RadioC2if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="C" />
+
+                <RadioButton
+                    android:id="@+id/RadioD2if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="D" />
+
+                <RadioButton
+                    android:id="@+id/RadioE2if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="E" />
+            </RadioGroup>
+
+        <TextView
+            android:id="@+id/V3if"
+            android:layout_below="@+id/GroupF2"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="3 .Language accuracy, Pronunciation, Speed control"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/GroupF3"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/V3if"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/RaidA3if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="A" />
+
+                <RadioButton
+                    android:id="@+id/RadioB3if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="B" />
+
+                <RadioButton
+                    android:id="@+id/RadioC3if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="C" />
+
+                <RadioButton
+                    android:id="@+id/RadioD3if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="D" />
+
+                <RadioButton
+                    android:id="@+id/RadioE3if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="E" />
+            </RadioGroup>
+        <TextView
+            android:id="@+id/V4if"
+            android:layout_below="@+id/GroupF3"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4 . Preparation works - Visual aid (screen,projector,... )"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/V4if"
+                android:id="@id/GroupF4"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/RadioA4if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="A" />
+                <RadioButton
+                    android:id="@+id/RadioB4if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="B" />
+
+                <RadioButton
+                    android:id="@+id/RadioC4if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="C" />
+
+                <RadioButton
+                    android:id="@+id/RadioD4if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="D" />
+
+                <RadioButton
+                    android:id="@+id/RadioE4if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="E" />
+            </RadioGroup>
+        <TextView
+            android:id="@+id/V5if"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/GroupF4"
+            android:layout_height="wrap_content"
+            android:text="5 . Interest, effort of persuasion"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/V5if"
+                android:id="@id/GroupF5"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/RadioA5if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="A" />
+
+                <RadioButton
+                    android:id="@+id/RadioB5if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="B" />
+
+                <RadioButton
+                    android:id="@+id/RadioC5if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="C" />
+
+                <RadioButton
+                    android:id="@+id/RadioD5if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="D" />
+
+                <RadioButton
+                    android:id="@+id/RadioE5if"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="E" />
+            </RadioGroup>
+        <TextView
+            android:id="@+id/VContent"
+            android:gravity="center"
+            android:layout_below="@+id/GroupF5"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Content, Technical aspect "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/V1ic"
+            android:layout_below="@+id/VContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="1 Choice and topic oc aral presentation " />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/V1ic"
+                android:id="@+id/GroupC1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/RadioA1ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="A" />
+
+                <RadioButton
+                    android:id="@+id/RadioB1ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="B" />
+
+                <RadioButton
+                    android:id="@+id/RadioC1ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="C" />
+
+                <RadioButton
+                    android:id="@+id/RadioD1ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="D" />
+
+                <RadioButton
+                    android:id="@+id/RadioE1ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="E" />
+            </RadioGroup>
+
+        <TextView
+            android:id="@+id/V2ic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/GroupC1"
+            android:layout_marginTop="10dp"
+            android:text="2 . Relevancy of comment and technical explanation "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/GroupC2"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/V2ic"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/RadioA2ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="A" />
+
+                <RadioButton
+                    android:id="@+id/RadioB2ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="B" />
+
+                <RadioButton
+                    android:id="@+id/RadioC2ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="C" />
+
+                <RadioButton
+                    android:id="@+id/RadioD2ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="D" />
+
+                <RadioButton
+                    android:id="@+id/RadioE2ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="E" />
+            </RadioGroup>
+
+        <TextView
+            android:id="@+id/V3ic"
+            android:layout_below="@+id/GroupC2"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3 . Progress pf reasoning "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/GroupC3"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/V3ic"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/RadioA3ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="A" />
+
+                <RadioButton
+                    android:id="@+id/RadioB3ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="B" />
+
+                <RadioButton
+                    android:id="@+id/RadioC3ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="C" />
+
+                <RadioButton
+                    android:id="@+id/RadioD3ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="D" />
+
+                <RadioButton
+                    android:id="@+id/RadioE3ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="E" />
+            </RadioGroup>
+        <TextView
+            android:id="@+id/textV4ic"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/GroupC3"
+            android:text="4 . Answer to questions "
+            android:textSize="25sp" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_below="@+id/textV4ic"
+                android:layout_marginTop="10dp"
+                android:id="@+id/GroupC4"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/RadioA4ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="A"/>
+
+                <RadioButton
+                    android:id="@+id/RadioB4ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="B"/>
+
+                <RadioButton
+                    android:id="@+id/RadioC4ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="C"/>
+
+                <RadioButton
+                    android:id="@+id/RadioD4ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="D"/>
+
+                <RadioButton
+                    android:id="@+id/RadioE4ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="E"/>
+            </RadioGroup>
+
+        <TextView
+            android:id="@+id/VComment"
+            android:layout_below="@+id/GroupC4"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Comment : "
+            android:textColor="#090404"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/ETC"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/VComment"
+            android:layout_marginTop="11dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:textAlignment="center"
+            android:textColor="#090404"
+            android:textSize="25dp" />
+        <Button
+            android:text="Button"
+            android:layout_below="@+id/ETC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:id="@+id/button"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>
